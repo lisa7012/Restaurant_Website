@@ -1,0 +1,31 @@
+<nav>
+        <div class="topnav" id="myTopnav">
+
+            <div class = "topnav-centered">
+                <a href="../HomePage/Homepage.html" class="active" id = "Logo"><img src = "../CommonStyling/BistroOtto.png" alt = "logo" id = "BOLogo"></a>
+            </div>
+
+            <a href="../MenuPage/menu.html">Menu</a>
+            <a href="../DeliveryPage/delivery.html">Take-Out</a>
+            <a href="../ReservationsPage/reservation.html">Reservations</a>
+
+            <div class = "topnav-right">
+                <a href="../ContactPage/Contact.html">Contact</a>
+                <a href="../AboutPage/about.html">About</a>
+                <a href="../PressPage/PressPage.html">Press</a>
+                <a href="../ReviewsPage/review.html">Reviews</a>
+            </div>
+            
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+</nav>
+
+<div class = "icon-bar">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+</div>
+
+L - For the links to work, please download every folder for each page.
+    This code should be placed before the <div class = "background"> where
+    all the content of your page is supposed to be.
