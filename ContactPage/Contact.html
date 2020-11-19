@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Contact - Bistro Otto</title>
+		<meta charset = "utf-8" />
+		<link rel = "stylesheet" type = "text/css" href = "../CommonStyling/BistroOttoCommon.css"/>
+		<link rel="stylesheet" type="text/css" href="Contact.css">
+   		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    	<!--To work on all devices-->
+    	<script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+	</head>
+	<body>
+	<!--------Navigation Bar------->
+    <nav>
+        <div class="topnav" id="myTopnav">
+
+            <div class = "topnav-centered">
+                <a href="../HomePage/Homepage.html" class="active" id = "Logo"><img src = "../CommonStyling/BistroOtto.png" alt = "logo" id = "BOLogo"></a>
+            </div>
+
+            <a href="../MenuPage/menu.html">Menu</a>
+            <a href="../DeliveryPage/delivery.html">Take-Out</a>
+            <a href="../ReservationsPage/reservation.html">Reservations</a>
+
+            <div class = "topnav-right">
+                <a href="../ContactPage/Contact.html">Contact</a>
+                <a href="../AboutPage/about.html">About</a>
+                <a href="../PressPage/PressPage.html">Press</a>
+                <a href="../ReviewsPage/review.html">Reviews</a>
+            </div>
+            
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </nav>
+
+    <div class = "icon-bar">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+    </div>
+
+     <div class = "background">
+     	<div class = "pageTitle">
+            <header class = "pageHeader"> Contact </header>
+        </div>
+		<table id = "core">
+			<tr><td id = "left">
+		<h1>
+			<img src="https://www.flaticon.com/svg/static/icons/svg/64/64113.svg" width="24" height="24" alt="Drop pin" title="Local">Location
+		</h1>
+		<p>143 Mont-Royal Est,</p>
+		<p>Montreal, QC. H2T 1N9</p>
+		<p>Canada</p>
+		<p>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Montreal_Metro.svg/768px-Montreal_Metro.svg.png" width="24" height="24" alt="Mont Royal Metro" title="Metro" id="metroPic"> Mont-Royal
+		</p>
+		<p>&nbsp;</p>
+		<h1>
+			<img src="https://www.flaticon.com/svg/static/icons/svg/44/44059.svg" width="24" height="24" alt="Clock" title="Time">
+		Hours</h1>
+		<table>
+			<tr>
+				<th>Mon</th>
+				<td>Closed</td>
+			</tr>
+			<tr>
+				<th>Tue - Sun</th>
+				<td>12:00 PM - 2:00 PM<br>5:00 PM - 8:00 PM</td>
+			</tr>
+		</table>
+
+		<p>&nbsp;</p>
+		<h1>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Bimetrical_icon_clipboard_black.svg/1200px-Bimetrical_icon_clipboard_black.svg.png" width="24" height="24" alt="clipboard" title="Form"> Contact
+		</h1>
+		<p class="Contact">
+			<a href="tel:4383834700">(438)383-4700</a>
+			<br>
+			<a href="mailto:ottobistro143@gmail.com">ottobistro143@gmail.com</a>
+			
+			</p>
+		</td>
+
+		<td id="right">
+			<p><h2 id="surveyBio">For messages or comments, please fill out this form</h2></p>
+			<p>
+			<label>Your name*<br><input name = "mame" type = "text" placeholder="First & Last Name" class = "inputBox" required>
+			</label>
+			</p>
+			<p>
+			<label>Phone number<br><input name = "phone" type = "text" placeholder="(000) 000-0000" class = "inputBox">
+			</label>
+			</p>
+			<p>
+			<label>Email*<br><input class = "inputBox" type = "email" name = "email" class = "inputBox" required>
+			</label>
+			</p>
+			<p>
+			<label>Branch*<br>
+				<select name="location" class = "inputBox">
+					<option>Other</option>
+					<option value = "montreal">Montreal</option>
+					<option value = "vancouver">Vancouver</option>
+					<option value = "toronto">Toronto</option>
+				</select>
+			</label>
+			</p>
+			<p>
+			<label for="textarea">Your Message<br></label>
+			<textarea placeholder="Maximum 200 characters." maxlength="200" class = "inputBox"></textarea>
+			</p>
+
+			<button type="submit" id = "button">Send message</button>
+		</td>
+		</tr>
+		</table>
+	</div>
+		</body>
+
+		<!----Footer of the page---->
+<footer class="footer">
+    <table class="footertable">
+        <tr>
+            <td>
+                <h2> Address </h2>
+                <p class = "footerp"> 143 Mont-Royal Est </p>
+                <p class = "footerp"> Montreal, QC, Canada H2T 1N9 </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2> Phone Number </h2>
+                <p><i class="fa fa-phone" id = "phone"></i> (438) 383-4700 </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2> Follow Us </h2>
+                <a href="#" class="fa fa-facebook" id = "facebook"></a>
+                <a href="#" class="fa fa-twitter" id = "twitter"></a>
+                <a href="#" class="fa fa-instagram" id = "instagram">
+            </td>
+        </tr>
+    </table>
+    <table class = "footertable2">
+        <tr>
+            <td rowspan = "2">
+                <h2> Opening Hours </h2>
+                <p><strong>Mon:</strong> CLOSED</p>
+                <p><strong>Tues:</strong> 12:00 PM - 2:00 PM/ 5:00 PM - 8:00 PM</p>
+                <p><strong>Wed:</strong> 12:00 PM - 2:00 PM/ 5:00 PM - 8:00 PM</p>
+                <p><strong>Thurs:</strong> 12:00 PM - 2:00 PM/ 5:00 PM - 8:00 PM</p>
+                <p><strong>Fri:</strong> 12:00 PM - 2:00 PM/ 5:00 PM - 8:00 PM</p>
+                <p><strong>Sat:</strong> 12:00 PM - 2:00 PM/ 5:00 PM - 8:00 PM</p>
+                <p><strong>Sun:</strong> 12:00 PM - 2:00 PM/ 5:00 PM - 8:00 PM</p>
+            </td>
+        </tr>
+    </table>
+
+    <p class = "copy"><br>Copyright &copy; 2018-2020</p>
+</footer>
+
+	</html>
+	
