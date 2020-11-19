@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Reviews - Bistro Otto </title>
+    <link rel="stylesheet" type="text/css" href="../CommonStyling/BistroOttoCommon.css" />
+    <link rel="stylesheet" type="text/css" href="review.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="topnav" id="myTopnav">
+
+            <div class="topnav-centered">
+                <a href="../HomePage/Homepage.html" class="active" id="Logo"><img src="../CommonStyling/BistroOtto.png"
+                        alt="logo" id="BOLogo"></a>
+            </div>
+
+            <a href="../MenuPage/menu.html">Menu</a>
+            <a href="../DeliveryPage/delivery.html">Take-Out</a>
+            <a href="../ReservationsPage/reservation.html">Reservations</a>
+
+            <div class="topnav-right">
+                <a href="../ContactPage/Contact.html">Contact</a>
+                <a href="../AboutPage/about.html">About</a>
+                <a href="../PressPage/PressPage.html">Press</a>
+                <a href="../ReviewsPage/review.html">Reviews</a>
+            </div>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </nav>
+
+    <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+    </div>
+    <div class="background">
+        <div class="pageTitle">
+            <header class="pageHeader"> Customer Reviews </header>
+        </div>
+        <div class="main1">
+                <div id="left" class="box" style="background-color:grey">
+                    <p id="rev" style="background-color:white">Add a review! </br> Please fill out the form to post a review.</p>
+                    <form action="" style="background-color:red">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span> </br> </br>
+                        <input type="text" id="name" placeholder="Name (ex: John S.)"> </br>
+                        <input type="text" id="comment" placeholder="Comment"> </br>
+                        <label> Would you recommend Bistro Otto?</label>
+                        <label><input type="radio" name="term" value="yes" />Yes</label>
+                        <label><input type="radio" name="term" value="no" />No</label> </br>
+                        <input type="text" id="dish" placeholder="Dish ordered">
+                    </form>
+                </div>
+            </br>
+                <div id="right" class="box" style="background-color:#ccc">
+                    <label>4.1</label>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    </br> </br>
+
+                    <div style="background-color:white">
+                        <p style="text-align:left">John S.</p> <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p style="text-align:left">"Comment..."</p>
+                        <p>Would (not) recommend Bistro Otto </br> Dish ordered : ...</p>
+                    </div>
+
+                    <div style="background-color:white">
+                        <p style="text-align:left">John S.</p> <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p style="text-align:left">"Comment..."</p>
+                        <p>Would (not) recommend Bistro Otto </br> Dish ordered : ...</p>
+                    </div>
+
+                </div>
+        </div>
+    </div>
+</body>
+
+<footer class="footer">
+    <table class="footertable">
+        <tr>
+            <td>
+                <h2> Address </h2>
+                <p class="footerp"> 143 Mont-Royal Est </p>
+                <p class="footerp"> Montreal, QC, Canada H2T 1N9 </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2> Phone Number </h2>
+                <p><i class="fa fa-phone" id="phone"></i> (438) 383-4700 </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2> Follow Us </h2>
+                <a href="#" class="fa fa-facebook" id="facebook"></a>
+                <a href="#" class="fa fa-twitter" id="twitter"></a>
+                <a href="#" class="fa fa-instagram" id="instagram">
+            </td>
+        </tr>
+    </table>
+    <table class="footertable2">
+        <tr>
+            <td rowspan="2">
+                <h2> Opening Hours </h2>
+                <p><strong>Mon:</strong> CLOSED</p>
+                <p><strong>Tues:</strong> 12:00 PM - 2:00 PM/ 5:00 PM - 8:00 PM</p>
+                <p><strong>Wed:</strong> 12:00 PM - 2:00 PM/ 5:00 PM - 8:00 PM</p>
+                <p><strong>Thurs:</strong> 12:00 PM - 2:00 PM/ 5:00 PM - 8:00 PM</p>
+                <p><strong>Fri:</strong> 12:00 PM - 2:00 PM/ 5:00 PM - 8:00 PM</p>
+                <p><strong>Sat:</strong> 12:00 PM - 2:00 PM/ 5:00 PM - 8:00 PM</p>
+                <p><strong>Sun:</strong> 12:00 PM - 2:00 PM/ 5:00 PM - 8:00 PM</p>
+            </td>
+        </tr>
+    </table>
+
+    <p class="copy"><br>Copyright &copy; 2018-2020</p>
+</footer>
+</html>
+
+<!-- <script type="text/javascript">
+
+    //Initialize Map	
+    var BistroOttoLat = 45.521741;
+    var BistroOttoLong = -73.585184;
+
+    
+    mymap = L.map('mapid').setView([BistroOttoLat, BistroOttoLong], 14.5);
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox/streets-v11',
+        tileSize: 512,
+        zoomOffset: -1
+    }).addTo(mymap);
+
+    function latlong() {
+        var addr = document.getElementById("address").value //This variable is the address entered by the user
+
+        var xmlhttp = new XMLHttpRequest();
+        var url = "https://nominatim.openstreetmap.org/search?format=json&limit=3&q=" + addr; //The address entered by the user is added to the given URL
+
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var myArr = JSON.parse(this.responseText);
+
+                var latitude = myArr[0].lat;
+                var longitude = myArr[0].lon;
+
+                var latlng = L.latLng(BistroOttoLat, BistroOttoLong);
+                var latlng2 = L.latLng(latitude, longitude);
+
+                //console.log(BistroOttoLat, BistroOttoLong)
+
+                L.circleMarker(latlng, { color: "green", radius: "100" }).addTo(mymap); //This is the circle marker at Concordia
+                L.circleMarker(latlng, { color: "green", radius: "20" }).addTo(mymap); //This is the circle marker at the address entered by the user
+                L.circleMarker(latlng2, { color: "red", radius: "20" }).addTo(mymap); //This is the smaller marker at the Concordia address
+
+                var distance = (latlng.distanceTo(latlng2)).toFixed(0) / 1000; //Calculates the distance between the latlng and latlng2
+
+                message.textContent = "Your distance from Bistro Otto is " + distance + "km"; //Displays distance to user
+
+                var latlngs = [[latitude, longitude], [BistroOttoLat, BistroOttoLong]]; //Array variable used to display the polyline
+                var polyline = L.polyline(latlngs, { color: 'red' }).addTo(mymap); //Polyline added to the map
+                mymap.fitBounds(polyline.getBounds());
+            }
+        };
+        xmlhttp.open("GET", url, true);
+        xmlhttp.send();
+    }
+</script> -->

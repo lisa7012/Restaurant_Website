@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Take-Out - Bistro Otto </title>
+    <link rel="stylesheet" type="text/css" href="../CommonStyling/BistroOttoCommon.css" />
+    <link rel="stylesheet" type="text/css" href="delivery.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="topnav" id="myTopnav">
+
+            <div class="topnav-centered">
+                <a href="../HomePage/Homepage.html" class="active" id="Logo"><img src="../CommonStyling/BistroOtto.png"
+                        alt="logo" id="BOLogo"></a>
+            </div>
+
+            <a href="../MenuPage/menu.html">Menu</a>
+            <a href="../DeliveryPage/delivery.html">Take-Out</a>
+            <a href="../ReservationsPage/reservation.html">Reservations</a>
+
+            <div class="topnav-right">
+                <a href="../ContactPage/Contact.html">Contact</a>
+                <a href="../AboutPage/about.html">About</a>
+                <a href="../PressPage/PressPage.html">Press</a>
+                <a href="../ReviewsPage/review.html">Reviews</a>
+            </div>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </nav>
+
+    <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+    </div>
+    <div class = "background">
+        <div class = "pageTitle">
+            <header class = "pageHeader"> Take-Out </header>
+        </div>
+        <div class="main1">
+            <h1 class="q">Want to order out? </h1>
+            </br>
+
+            <div class="main2">
+                <h1>Visit our ordering page...</h1>
+
+                <input type="button" id="button" value="Order On Site" onclick="document.location='../MenuPage/menu-order.html'"></button>
+               
+                </br>
+
+                <h1>Or choose a delivery service!</h1>
+
+                <table>
+                    <th><a href="https://www.ubereats.com/ca/montreal/food-delivery/bistro-otto/PgUTBWqiQbOBSMS8-du11Q">
+                            <img border="0" alt="UberEats"
+                                src="https://upload.wikimedia.org/wikipedia/commons/2/23/Uber_eats_logo_2017_06_22.jpg"
+                                width="200" height="200">
+                        </a></th>
+                    <th><a href="https://www.skipthedishes.com/bistro-otto">
+                            <img border="0" alt="Skip the Dishes"
+                                src="https://pbs.twimg.com/profile_images/1287611203641061376/JnfLrXmi_400x400.png"
+                                width="200" height="200">
+                        </a></th>
+                    <th><a href="https://www.doordash.com/store/bistro-otto-montreal-914739999/en-CA">
+                            <img border="0" alt="DoorDash"
+                                src="https://cdn.doordash.com/static/img/doordash-square-red.jpg?dd-nonce=1" width="200"
+                                height="200">
+                        </a></th>
+
+                </table>
+
+                <p>Click on the logo of the delivery service of your choice!</p>
+            </div>
+        </div>
+        <div class="main1">
+            <h1 class="q">Make sure we delivery to you!</h1>
+            </br>
+            <div class="main2">
+                <table>
+                    <tr>
+                        <td><iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.585236630147!2d-73.59033844805377!3d45.518427378999114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a2ccaa7a09f%3A0x1dd44b85cb5995d6!2s143%20Mont-Royal%20Ave%20E%2C%20Montreal%2C%20QC%20H2T%202Y6!5e0!3m2!1sen!2sca!4v1604511848109!5m2!1sen!2sca"
+                                width="400" height="400" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                        </td>
+                        <td>
+                            <p>Enter your address here</p>
+                            <input class = "text" type="text" id="address" name="address" placeholder="1234 Rue xyz" required />
+                        </td>
+                        <td>
+                            <input type="button" id="button" value="Check" onclick="latlong()"></button>
+                        </td>
+                        <td>
+                            <span id="message"></span>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<footer class="footer">
+    <table class="footertable">
+        <tr>
+            <td>
+                <h2> Address </h2>
+                <p class="footerp"> 143 Mont-Royal Est </p>
+                <p class="footerp"> Montreal, QC, Canada H2T 1N9 </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2> Phone Number </h2>
+                <p><i class="fa fa-phone" id="phone"></i> (438) 383-4700 </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2> Follow Us </h2>
+                <a href="#" class="fa fa-facebook" id="facebook"></a>
+                <a href="#" class="fa fa-twitter" id="twitter"></a>
+                <a href="#" class="fa fa-instagram" id="instagram">
+            </td>
+        </tr>
+    </table>
+    <table class="footertable2">
+        <tr>
+            <td rowspan="2">
+                <h2> Opening Hours </h2>
+                <p><strong>Mon:</strong> CLOSED</p>
+                <p><strong>Tues:</strong> 12:00 PM - 2:00 PM/ 5:00 PM - 8:00 PM</p>
+                <p><strong>Wed:</strong> 12:00 PM - 2:00 PM/ 5:00 PM - 8:00 PM</p>
+                <p><strong>Thurs:</strong> 12:00 PM - 2:00 PM/ 5:00 PM - 8:00 PM</p>
+                <p><strong>Fri:</strong> 12:00 PM - 2:00 PM/ 5:00 PM - 8:00 PM</p>
+                <p><strong>Sat:</strong> 12:00 PM - 2:00 PM/ 5:00 PM - 8:00 PM</p>
+                <p><strong>Sun:</strong> 12:00 PM - 2:00 PM/ 5:00 PM - 8:00 PM</p>
+            </td>
+        </tr>
+    </table>
+
+    <p class="copy"><br>Copyright &copy; 2018-2020</p>
+</footer>
+
+</html>
+
+<!-- <script type="text/javascript">
+
+    //Initialize Map	
+    var BistroOttoLat = 45.521741;
+    var BistroOttoLong = -73.585184;
+
+    
+    mymap = L.map('mapid').setView([BistroOttoLat, BistroOttoLong], 14.5);
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox/streets-v11',
+        tileSize: 512,
+        zoomOffset: -1
+    }).addTo(mymap);
+
+    function latlong() {
+        var addr = document.getElementById("address").value //This variable is the address entered by the user
+
+        var xmlhttp = new XMLHttpRequest();
+        var url = "https://nominatim.openstreetmap.org/search?format=json&limit=3&q=" + addr; //The address entered by the user is added to the given URL
+
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var myArr = JSON.parse(this.responseText);
+
+                var latitude = myArr[0].lat;
+                var longitude = myArr[0].lon;
+
+                var latlng = L.latLng(BistroOttoLat, BistroOttoLong);
+                var latlng2 = L.latLng(latitude, longitude);
+
+                //console.log(BistroOttoLat, BistroOttoLong)
+
+                L.circleMarker(latlng, { color: "green", radius: "100" }).addTo(mymap); //This is the circle marker at Concordia
+                L.circleMarker(latlng, { color: "green", radius: "20" }).addTo(mymap); //This is the circle marker at the address entered by the user
+                L.circleMarker(latlng2, { color: "red", radius: "20" }).addTo(mymap); //This is the smaller marker at the Concordia address
+
+                var distance = (latlng.distanceTo(latlng2)).toFixed(0) / 1000; //Calculates the distance between the latlng and latlng2
+
+                message.textContent = "Your distance from Bistro Otto is " + distance + "km"; //Displays distance to user
+
+                var latlngs = [[latitude, longitude], [BistroOttoLat, BistroOttoLong]]; //Array variable used to display the polyline
+                var polyline = L.polyline(latlngs, { color: 'red' }).addTo(mymap); //Polyline added to the map
+                mymap.fitBounds(polyline.getBounds());
+            }
+        };
+        xmlhttp.open("GET", url, true);
+        xmlhttp.send();
+    }
+</script> -->

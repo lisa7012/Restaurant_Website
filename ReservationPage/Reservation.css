@@ -1,0 +1,98 @@
+#Info{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+
+#left{
+	padding: 30px;
+	}
+#right{
+	padding: 70px;
+	}
+
+th{
+	text-align: left;
+	padding: 5px;
+}
+
+.input td{
+	padding: 14px;
+}
+
+#core
+{
+	border: 5px solid black;
+	border-radius: 25px;
+	background-color: #f5e7e6;
+	margin-left: auto;
+  	margin-right: auto;
+  	margin-top: 45px;
+  	margin-bottom: 5px;
+}
+
+#surveyBio
+{
+	color:black;
+	text-decoration: none;
+}
+
+.inputBox
+{
+	border:2px solid #555555;
+	border-radius: 4px;
+	padding: 8px 50px 8px 8px;
+	background-color: #f8f8f8;
+	font-size: 15px;
+	transition-duration: 0.4s;
+}
+
+#localAlign{
+	vertical-align: top;
+	height:100px;
+}
+
+#inputLocalBox
+{
+	border:2px solid #555555;
+	border-radius: 4px;
+	padding: 8px 47px 8px 8px;
+	background-color: #f8f8f8;
+	font-size: 15px;
+	transition-duration: 0.4s;
+}
+
+#inputLocalBox:hover {
+	border-color: red;
+}
+
+
+textarea{
+	height: 150px;
+	width: 480px;
+}
+
+#button{
+	padding: 6px 10px;
+	font-size: 16px;
+	transition-duration: 0.25s;
+}
+
+.inputBox:hover {
+	border-color: red;
+  /*background-color: #ffcccb;*/
+  /*color: black;*/
+}
+
+#button:hover{
+	border-color: red;
+	background-color: red;
+	border-radius: 4px;
+	color: white;
+}
+
+::placeholder
+{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-variant: small-caps;
+}
