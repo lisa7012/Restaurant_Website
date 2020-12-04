@@ -33,7 +33,6 @@
             19: 7.50, 20: 9.00, 21: 8.50, 22: 8.00,
             23: 6.50, 24: 16.00
                              
-                             
                              };
             
             
@@ -42,11 +41,34 @@
             var result = 0;
 
             var menu = document.getElementById("menu");
+            
+            
+            var values = [];
+            var fields = document.getElementsByName("menu_item[]");
+            for(var i = 0; i < fields.length; i++) {
+                
+                
+                if (fields[i].checked)
+                    
+                    {
+                        
+                        result += parseFloat(array_menu[fields[i].value]);
+                    }
+                
+                //console.log(fields[i].value);
+                
+                
+            }
 
-            for (index = 0; index < menu.menu_item.length; index++)
+            
+            
+            
+            
 
-                if (menu.menu_item[index].checked)
-                    result += parseFloat(array_menu[menu.menu_item[index].value]);
+            //for (index = 0; index < menu.menu_item[0].length; index++)
+
+               // if (menu.menu_item[index].checked)
+                   // result += //parseFloat(array_menu[menu.menu_item[index].value]);
 
 
             result = result.toFixed(2);
@@ -56,39 +78,8 @@
 
         }
         
-     // item 1 - $  
-     // item 2 - $ 
-     // item 3 - $ 
-     // item 4 - $ 
-     // item 5 - $ 
-     // item 6 - $ 
-     // item 7 - $ 
-     // item 8 - $ 
-     // item 9 - $ 
-     // item 10 - $ 
-     // item 11 - $ 
-     // item 12 - $ 
-     // item 13 - $ 
-     // item 14 - $ 
-     // item 15 - $ 
-     // item 16 - $ 
-     // item 17 - $
-     // item 18 - $
-     // item 19 - $
-     // item 20 - $
-     // item 21 - $
-    // item 22 - $
-     // item 23 - $
-      // item 24 - $
-      // item 25 - $
         
-        
-        
-        
-        
-        
-
-
+    
 
 
     </script>
@@ -177,85 +168,85 @@
                             <h2 class="menu-header">Appetizers</h2>
 
                             <label>Miso Soup - 5.00$</label>
-                            <input type="checkbox" name="menu_item" value="1"><br>
+                            <input type="checkbox" name="menu_item[]" value="1"><br>
 
                             <label>Edamame - 4.00$</label>
-                            <input type="checkbox" name="menu_item" value="2"><br>
+                            <input type="checkbox" name="menu_item[]" value="2"><br>
 
                             <label>Salad of the day - 12.00$</label>
-                            <input type="checkbox" name="menu_item" value="3"><br>
+                            <input type="checkbox" name="menu_item[]" value="3"><br>
 
                             <label>Brussel Sprouts - 7.00$</label>
-                            <input type="checkbox" name="menu_item" value="4"><br>
+                            <input type="checkbox" name="menu_item[]" value="4"><br>
 
 
                             <h5 class="menu-header">Homemade Tofu</h5>
 
                             <label>Regular - 5.00$</label>
-                            <input type="checkbox" name="menu_item" value="5"><br>
+                            <input type="checkbox" name="menu_item[]" value="5"><br>
 
                             <label>Spicy - 5.00$</label>
-                            <input type="checkbox" name="menu_item" value="6"><br>
+                            <input type="checkbox" name="menu_item[]" value="6"><br>
 
                             <label>Ikura - 8.00$</label>
-                            <input type="checkbox" name="menu_item" value="7"><br>
+                            <input type="checkbox" name="menu_item[]" value="7"><br>
 
                             <label>Syrup - 5.50$</label>
-                            <input type="checkbox" name="menu_item" value="8"><br>
+                            <input type="checkbox" name="menu_item[]" value="8"><br>
                             <br><br>
 
                             <label>Homemade Organic Natto - 7.00$</label>
-                            <input type="checkbox" name="menu_item" value="9"><br>
+                            <input type="checkbox" name="menu_item[]" value="9"><br>
 
                             <label>Japanese Premium Rice - 3.00$</label>
-                            <input type="checkbox" name="menu_item" value="10"><br>
+                            <input type="checkbox" name="menu_item[]" value="10"><br>
 
 
                             <h2 class="menu-header">Mains</h2>
 
                             <label>Chirashi (+ Japanese Uni) - 36.00$</label>
-                            <input type="checkbox" name="menu_item" value="11"><br>
+                            <input type="checkbox" name="menu_item[]" value="11"><br>
 
                             <label>Maguro Don - 34.00$</label>
-                            <input type="checkbox" name="menu_item" value="12"><br>
+                            <input type="checkbox" name="menu_item[]" value="12"><br>
 
                             <label>Otto Ramen - 16.00$</label>
-                            <input type="checkbox" name="menu_item" value="13"><br>
+                            <input type="checkbox" name="menu_item[]" value="13"><br>
 
                             <label>Mushroom Mazemen - 18.00$</label>
-                            <input type="checkbox" name="menu_item" value="14"><br>
+                            <input type="checkbox" name="menu_item[]" value="14"><br>
 
                             <label>Duck Mazemen - 24.00$</label>
-                            <input type="checkbox" name="menu_item" value="15"><br>
+                            <input type="checkbox" name="menu_item[]" value="15"><br>
 
                             <label>Uni Mazemen - 24.00$</label>
-                            <input type="checkbox" name="menu_item" value="16"><br>
+                            <input type="checkbox" name="menu_item[]" value="16"><br>
 
                             <label>Spicy Ikura Mazemen - 22.00$</label>
-                            <input type="checkbox" name="menu_item" value="17"><br>
+                            <input type="checkbox" name="menu_item[]" value="17"><br>
 
                             <label>Karaage - 12.00$</label>
-                            <input type="checkbox" name="menu_item" value="18"><br>
+                            <input type="checkbox" name="menu_item[]" value="18"><br>
 
                             <h2 class="menu-header">Grocery</h2>
 
                             <label>Ketchup - 7.50$</label>
-                            <input type="checkbox" name="menu_item" value="19"><br>
+                            <input type="checkbox" name="menu_item[]" value="19"><br>
 
                             <label>Yuzu Mayo - 9.00$</label>
-                            <input type="checkbox" name="menu_item" value="20"><br>
+                            <input type="checkbox" name="menu_item[]" value="20"><br>
 
                             <label>Sesame Dressing - 8.50$</label>
-                            <input type="checkbox" name="menu_item" value="21"><br>
+                            <input type="checkbox" name="menu_item[]" value="21"><br>
 
                             <label>Otto Aragoshi Ponzu - 8.00$</label>
-                            <input type="checkbox" name="menu_item" value="22"><br>
+                            <input type="checkbox" name="menu_item[]" value="22"><br>
 
                             <label>Soya Sauce for Sashimi - 6.50$</label>
-                            <input type="checkbox" name="menu_item" value="23"><br>
+                            <input type="checkbox" name="menu_item[]" value="23"><br>
 
                             <label>Yuzukoshu 100G (Spicy Yuzu Paste) - 16.00$</label>
-                            <input type="checkbox" name="menu_item" value="24"><br>
+                            <input type="checkbox" name="menu_item[]" value="24"><br>
 
                             <br><br>
 
