@@ -10,4 +10,4 @@ Joe Junior Loutfi - 40155049
 
 Jessica Asfour - 40029395
 
-Laurent Cousineau 
+Laurent Cousineau - 26773001
